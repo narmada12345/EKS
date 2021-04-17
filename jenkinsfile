@@ -10,6 +10,7 @@ pipeline {
         }
         stage('install teraaform') {
             steps {
+                scrpit {
             //Get the terraform
             sh """
                 #!/bin/bash
@@ -89,4 +90,7 @@ pipeline {
          }   
   
     }  
-}   
+ }
+
+
+}
