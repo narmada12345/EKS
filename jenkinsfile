@@ -8,8 +8,8 @@ pipeline {
               git credentialsId: '39805148-69b3-42ee-a919-ec34747f0cb3', url: 'https://github.com/narmada12345/EKS.git'  
             }
         }
-         stage(install teraaform){
-             steps {
+        stage(install teraaform){
+            steps {
             //Get the terraform
             sh """
                 #!/bin/bash
